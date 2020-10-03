@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package matrizRepresentadoListaLigada;
+package aplicacionMatrices;
 
 /**
  *
  * @author Luis Felipe Cadavid
  */
-public class MatrizRepresentadaenListaLigada {
+public class MarizListaLigada {
     
 }
