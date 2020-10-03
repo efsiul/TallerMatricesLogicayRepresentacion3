@@ -9,7 +9,7 @@ package polinomioRepresentadoVectorForma1;
  *
  * @author Luis Felipe Cadavid
  */
-public class TallerVectoresMatricesLogicayRepresentacion3 {
+public class PolinomioRepresentadoVectorForma1 {
 
     /**
      * @param args the command line arguments
