@@ -13,10 +13,11 @@ import javax.swing.JOptionPane;
  */
 public class menuInicio {
         int f=0, c = 3;
-        SubmenuMatrices menuMat = new SubmenuMatrices();
 
 	public static void main(String[] args) {
+            
             int option=-1;
+            SubmenuMatrices menuMat = new SubmenuMatrices();
 
             boolean bandera = true;
             while(bandera ==true)  {
@@ -37,7 +38,7 @@ public class menuInicio {
                         break;
                     case 2:
                         
-                        //menuMat.menuMatrices();
+                        menuMat.menuMatrices();
                         
                         break;
 

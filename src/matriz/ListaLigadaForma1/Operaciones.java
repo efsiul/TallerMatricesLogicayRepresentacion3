@@ -63,7 +63,7 @@ public class Operaciones {
         for (int i=0; i<=2;i++){
             this.exponente[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del exponente para la variable t del termino "+i));
         }
-        return exponente;
+        return this.exponente;
     }
         
     public MatrizEnListaLigadaForma1 matrizOperacion(){
@@ -74,19 +74,19 @@ public class Operaciones {
         for (int i=1; i<=3;i++){
             for (int j=1; j<=fila; j++){
                 double resultado;
-                switch (i){
+                switch (j){
                     case 1:
-                       resultado=Math.pow(valor, exponente[0]);
+                       resultado=Math.pow(valor, this.exponente[0]);
                        t = new Tripleta(i, j, resultado);
                        matrizOperacion.setCelda(t);
                        break;
                     case 2:
-                        resultado=Math.pow(valor, exponente[1]);
+                        resultado=Math.pow(valor, this.exponente[1]);
                         t = new Tripleta(i, j,resultado );
                         matrizOperacion.setCelda(t);
                         break;
                     case 3:
-                        resultado=Math.pow(valor, exponente[2]);
+                        resultado=Math.pow(valor, this.exponente[2]);
                         t = new Tripleta( i, j, resultado);
                         break;
                 }
@@ -94,7 +94,7 @@ public class Operaciones {
         }
             
       
-        return matrizOperacion;
+        return this.matrizOperacion;
     }
 /*
     public static MatrizEnListaLigadaForma1 matrizOperacion(){
