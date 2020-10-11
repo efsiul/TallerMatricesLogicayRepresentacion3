@@ -37,7 +37,7 @@ public class menuInicio {
                         break;
                     case 2:
                         
-                        menuMat.menuMatrices();
+                        //menuMat.menuMatrices();
                         
                         break;
 
