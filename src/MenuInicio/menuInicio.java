@@ -6,20 +6,25 @@
 package MenuInicio;
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author Luis Felipe Cadavid
  */
 public class menuInicio {
+        int f=0, c = 3;
+        SubmenuMatrices menuMat = new SubmenuMatrices();
+
 	public static void main(String[] args) {
-            int option = -1;
+            int option=-1;
+
             boolean bandera = true;
             while(bandera ==true)  {
     
 		option = Integer.parseInt(JOptionPane.showInputDialog(
                         "MENU \n"
-                        + "1 -> Trabajo con Polinomíos \n"
-                        + "2 -> Trabajo con Matrices  \n"
+                        + "1 -> Trabajemos con Polinomíos \n"
+                        + "2 -> Trabajemos con Matrices  \n"
                         + "3 -> Integrantes del proyecto \n"
                         + "4 -> Salir \n"));
 		//JOptionPane.showMessageDialog(null, "Hello " + name);
@@ -31,8 +36,11 @@ public class menuInicio {
                         //sentencia de polinomio
                         break;
                     case 2:
-                        //sentencia de Matrices
+                        
+                        menuMat.menuMatrices();
+                        
                         break;
+
                     case 3:
                         JOptionPane.showMessageDialog(null,"\n"
                                 + "Los integrantes son:\n"
@@ -53,4 +61,5 @@ public class menuInicio {
                 
                 
     }
+
 }

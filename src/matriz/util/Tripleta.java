@@ -23,7 +23,7 @@
 package matriz.util;
 
 public class Tripleta {
-    private int f,c;
+      private int f,c;
     Object v;
 
     public Tripleta(int f, int c, Object v) {
