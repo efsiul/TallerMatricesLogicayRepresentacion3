@@ -30,6 +30,10 @@ public class NodoDoble {
     public NodoDoble(Tripleta t) {
         this.t = t;
     }
+
+    public NodoDoble() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public NodoDoble getLigaC() {
         return ligaC;

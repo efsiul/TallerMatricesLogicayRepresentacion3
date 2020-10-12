@@ -40,13 +40,15 @@ public class MatrizEnListaLigadaForma1 {
         construyeNodosCabeza(numeroFilas, numeroColumnas);
     }
 
+
+
     /**
      *
      * @param numeroFilas
      * @param numeroColumnas
      */
     private void construyeNodosCabeza(int numeroFilas, int numeroColumnas) {
-        Tripleta tripletaConfiguracion = new Tripleta(numeroFilas, numeroColumnas, null);
+        Tripleta tripletaConfiguracion = new Tripleta(numeroFilas, numeroColumnas,null );
         nodoCabezaMatriz = new NodoDoble(tripletaConfiguracion);
 
         // Depende de las f y c
