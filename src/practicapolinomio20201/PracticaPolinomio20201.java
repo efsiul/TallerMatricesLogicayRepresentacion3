@@ -6,8 +6,6 @@
 package practicapolinomio20201;
 import javax.swing.*;
 
-
-
 /**
  *
  * @author Usuario
@@ -18,48 +16,17 @@ public class PracticaPolinomio20201 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
         
-       
-            String optionSelect = "";
-            while(!optionSelect.equals("7")) {
-                optionSelect = applicationMenu();
-                 switch (optionSelect)
-                {
-                 case "1":
-                     addNewPolinomio();
-                     break;
-                 case "2":
-                    showPolinomio();
-                    break;
-                 case "3":
-                    showPolinomioByIndex();
-                 break;
-                 case "4":
-                     multiplicarPolinomioAB();
-                break;
-                 case "5":
-                     derivarPolinomio();
-                 break;
-                 case "6":
-                     evaluarPolinomio();
-                break;
-                 case "7":
-                break;
-                 default:
-                     JOptionPane.showMessageDialog(null,"La opción ingresada no es valida");
 
-               break;
-                } 
-            } 
         
-    }
+    //}
     
     
     /*
     Método para derivar un polinomio seleccionado desde el menú principal.
     Primero el usuario seleccionará un polinomio almacenado en memoria, luego el sistema arrojará el resultado final*/
-    public static void derivarPolinomio(){
+    public  void derivarPolinomio(){
         
         String indice=String.format(JOptionPane.showInputDialog("Por favor ingrese el numero del polinomio que desea derivar"));
         
@@ -72,7 +39,7 @@ public class PracticaPolinomio20201 {
     Se evaluan los grados del polinomio A y el Polinomio B, para saber cual es el menor y el mayor, y así conformar
     Un polinomio C resultado*/
 
-    public static void multiplicarPolinomioAB() {
+    public  void multiplicarPolinomioAB() {
         
         String indiceA=String.format(JOptionPane.showInputDialog("Por favor ingrese el numero del polinomio A"));
 
@@ -144,7 +111,7 @@ public class PracticaPolinomio20201 {
     /*
     Método que permite seleccionar y visualizar un polinmio almacenado en memoria
     */
-    public static void showPolinomioByIndex() {
+    public  void showPolinomioByIndex() {
          
          String indice=String.format(JOptionPane.showInputDialog("Por favor ingrese el numero del polinomio que desea ver (entre 1 y 10)"));
          PolinomioVectorF1 arreglo = arreglos[Integer.parseInt(indice) - 1];
@@ -155,7 +122,7 @@ public class PracticaPolinomio20201 {
     /*
     Método que muestra todos los polinomios almacenados en memoria
     */
-    public static void showPolinomio(){
+    public  void showPolinomio(){
         for(int i = 0; i < arreglos.length; i++) {
             if(arreglos[i] != null) {
             PolinomioVectorF1 arreglo = arreglos[i];
@@ -172,7 +139,7 @@ public class PracticaPolinomio20201 {
     En éste método se le pide al usuario que seleccione un polinomio a evaluar
     y luego que ingrese un número para que la operación se haga efectica
     */
-    public static void evaluarPolinomio() {
+    public  void evaluarPolinomio() {
         
         String numeroPolinomio=String.format(JOptionPane.showInputDialog("Ingrese el numero del polinomio para evaluar: "));
         String numeroEvaluar=String.format(JOptionPane.showInputDialog("Ingrese el numero con el que desea evaluar el polinomio:  "));
@@ -190,7 +157,7 @@ public class PracticaPolinomio20201 {
     Cada monomio está conformado por un coefienciete, una x y un exponente.
     Ejemplo: 3x^2-6x-3
     */
-    public static void addNewPolinomio() { 
+    public  void addNewPolinomio() { 
         for(int i = 0; i <= 9 ; i++ ) {
             String polinomio=String.format(JOptionPane.showInputDialog("Recuerde ingresar cada polinomio de forma descendente\n. Ejemplo:3X2+3x-2\n"
                     + "Ingrese el polinomio numero:  " + (i+1)));
@@ -241,7 +208,7 @@ public class PracticaPolinomio20201 {
         }
     }
     
-    public static String applicationMenu() {
+    public  String applicationMenu() {
         
         String text = String.format(JOptionPane.showInputDialog(null, "Operando con Polinomios \n\n" +
                 "1. Ingresar 10 polinomios\n"+
