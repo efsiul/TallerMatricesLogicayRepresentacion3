@@ -4,7 +4,6 @@
 //
 
 package matriz.listaligadaforma1;
-
 import javax.swing.JOptionPane;
 import matriz.util.Tripleta;
 
