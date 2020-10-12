@@ -4,9 +4,9 @@
 //
 
 package MenuInicio;
-
 import java.awt.Component;
 import javax.swing.JOptionPane;
+import static practicapolinomio20201.PracticaPolinomio20201.applicationMenu;
 
 public class menuInicio {
     int f = 0;
@@ -24,6 +24,7 @@ public class menuInicio {
             option = Integer.parseInt(JOptionPane.showInputDialog("MENU \n1 -> Trabajemos con Polinomíos \n2 -> Trabajemos con Matrices  \n3 -> Integrantes del proyecto \n4 -> Salir \n"));
             switch(option) {
             case 1:
+                applicationMenu();
                 break;
             case 2:
                 menuMat.menuMatrices();
