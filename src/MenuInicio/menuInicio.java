@@ -1,56 +1,45 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package MenuInicio;
-import javax.swing.JOptionPane;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
-/**
- *
- * @author Luis Felipe Cadavid
- */
+package MenuInicio;
+import java.awt.Component;
+import javax.swing.JOptionPane;
+import static practicapolinomio20201.PracticaPolinomio20201.applicationMenu;
+
 public class menuInicio {
-	public static void main(String[] args) {
-            int option = -1;
-            boolean bandera = true;
-            while(bandera ==true)  {
-    
-		option = Integer.parseInt(JOptionPane.showInputDialog(
-                        "MENU \n"
-                        + "1 -> Trabajo con Polinomíos \n"
-                        + "2 -> Trabajo con Matrices  \n"
-                        + "3 -> Integrantes del proyecto \n"
-                        + "4 -> Salir \n"));
-		//JOptionPane.showMessageDialog(null, "Hello " + name);
-                
-                switch (option)
-                {   
-                    
-                    case 1:
-                        //sentencia de polinomio
-                        break;
-                    case 2:
-                        //sentencia de Matrices
-                        break;
-                    case 3:
-                        JOptionPane.showMessageDialog(null,"\n"
-                                + "Los integrantes son:\n"
-                                + "Luis Felipe Cadavid\n"
-                                + "Juan Carlos Gómez\n"
-                                + "Cristian Julio\n"
-                                + "Rodrigo Alonso Cardona\n");
-                        break;
-                    case 4:
-                        System.out.println("Saliendo....");
-                        bandera=false;
-                        break;
-                    default:
-                        System.out.println("Opción incorrecta, repite por favor");
-                 }
+    int f = 0;
+    int c = 3;
+
+    public menuInicio() {
+    }
+
+    public static void main(String[] args) {
+        int option;
+        SubmenuMatrices menuMat = new SubmenuMatrices();
+        boolean bandera = true;
+
+        while(bandera) {
+            option = Integer.parseInt(JOptionPane.showInputDialog("MENU \n1 -> Trabajemos con Polinomíos \n2 -> Trabajemos con Matrices  \n3 -> Integrantes del proyecto \n4 -> Salir \n"));
+            switch(option) {
+            case 1:
+                applicationMenu();
+                break;
+            case 2:
+                menuMat.menuMatrices();
+                break;
+            case 3:
+                JOptionPane.showMessageDialog((Component)null, "\nLos integrantes son:\nLuis Felipe Cadavid\nJuan Carlos Gómez\nCristian Julio\nRodrigo Alonso Cardona\n");
+                break;
+            case 4:
+                System.out.println("Saliendo....");
+                bandera = false;
+                break;
+            default:
+                System.out.println("Opción incorrecta, repite por favor");
+            }
         }
-                   
-                
-                
+
     }
 }
